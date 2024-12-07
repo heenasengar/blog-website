@@ -366,32 +366,26 @@ body.active { overflow: hidden; }
 .nav-toggle-btn.active .span.three { transform: translateY(-10px) rotate(-45deg); }
 
 .navbar {
-  background-color: var(--eerie-black);
-  color: var(--white);
-  position: absolute;
-  top: calc(100% - 20px);
-  right: 0;
-  min-width: 180px;
-  padding: 15px 10px;
-  border-radius: var(--radius-16);
-  transform: translateY(10px);
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-light);
+  padding: 10px 20px;
 }
 
-.navbar.active {
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
+.navbar .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.navbar-link {
-  text-align: right;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-500);
-  padding: 5px;
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
 }
 
 
